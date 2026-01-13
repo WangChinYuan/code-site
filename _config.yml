@@ -1,0 +1,14 @@
+title: 我的前端文檔 Demo
+description: 這是模仿 Bloc Library 的最小 Demo
+theme: just-the-docs
+
+
+url: "https://WangChinYuan.github.io"
+baseurl: "/code-site"
+# 啟用導覽列的設定
+enable_search_in_sidebar: true
+
+# 讓程式碼高亮顯示 (重要！)
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
