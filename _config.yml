@@ -1,10 +1,16 @@
 title: 我的前端文檔 Demo
 description: 這是模仿 Bloc Library 的最小 Demo
-theme: just-the-docs
+#theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 
 url: "https://WangChinYuan.github.io"
 baseurl: "/code-site"
+
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+  
 # 啟用導覽列的設定
 enable_search_in_sidebar: true
 
