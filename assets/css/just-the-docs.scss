@@ -1,0 +1,23 @@
+
+// 1. 定義你的變數 (要在引入主題之前定義)
+$primary: #02569B; /* Flutter 官方深藍 */
+$link-color: #02569B;
+
+// 2. 引入原本的主題 (這行是用來載入主題核心的)
+@import "just-the-docs";
+
+// 3. 其他自定義 CSS (要在引入主題之後)
+.nav-list .nav-list-item .nav-list-link.active {
+    color: $primary;
+    font-weight: bold; /* 讓選中的項目更明顯 */
+}
+
+.search-input {
+    border-color: #e0e0e0;
+}
+
+// 讓按鈕也變成 Flutter 藍
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+}

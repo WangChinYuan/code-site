@@ -1,20 +1,31 @@
-title: 我的前端文檔 Demo
-description: 這是模仿 Bloc Library 的最小 Demo
-#theme: just-the-docs
-remote_theme: just-the-docs/just-the-docs
-
-
+title: Flutter Clone Docs
+description: 模仿 Flutter 官方文檔的 Jekyll 網站
+# 根據文章建議，確保 url 和 baseurl 正確
 url: "https://WangChinYuan.github.io"
 baseurl: "/code-site"
 
+# 使用遠端主題
+remote_theme: just-the-docs/just-the-docs@main
+
+# 啟用導覽列搜尋
+enable_search_in_sidebar: true
+
+# 根據 CSDN 文章建議，加入這些關鍵插件以提升專業度
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-  
-# 啟用導覽列的設定
-enable_search_in_sidebar: true
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-# 讓程式碼高亮顯示 (重要！)
+# 導覽列設定 (模仿 Flutter 文檔的層級感)
+nav_sort: case_insensitive
+
+# 程式碼高亮設定
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+# 額外設定 (可選)：在頁尾顯示 "Edit this page on GitHub"
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "WangChinYuan/code-site"
